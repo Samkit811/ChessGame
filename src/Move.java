@@ -4,7 +4,7 @@ public class Move {
     private Integer desRow;
     private Integer desColumn;
 
-    public Move(Colour colour, Piece piece, Integer desColumn, Integer desRow){
+    public Move(Colour colour, Piece piece, Integer desRow, Integer desColumn){
         this.colour = colour;
         this.desColumn = desColumn;
         this.desRow = desRow;
