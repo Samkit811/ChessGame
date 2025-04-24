@@ -1,3 +1,5 @@
+import java.util.Objects;
+
 public class Rook extends Piece {
     public Rook(Colour colour, Integer row, Integer column) {
         super(colour, row, column);
@@ -5,6 +7,6 @@ public class Rook extends Piece {
 
     @Override
     public boolean canMove(Board board, Integer desRow, Integer desColumn) {
-        return false;
+        return Objects.equals(desRow, this.getRow()) || Objects.equals(desColumn, this.getColumn());
     }
 }

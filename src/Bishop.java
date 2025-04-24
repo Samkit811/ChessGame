@@ -6,6 +6,8 @@ public class Bishop extends Piece {
 
     @Override
     public boolean canMove(Board board, Integer desRow, Integer desColumn) {
-        return false;
+        int rowDiff = Math.abs(desRow - this.getRow());
+        int columDiff = Math.abs(desColumn - this.getColumn());
+        return rowDiff == columDiff;
     }
 }

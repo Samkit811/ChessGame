@@ -18,4 +18,8 @@ public class Move {
     public Integer getDesRow() {
         return this.desRow;
     }
+
+    public Piece getPiece() {
+        return piece;
+    }
 }

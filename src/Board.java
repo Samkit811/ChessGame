@@ -49,10 +49,10 @@ public class Board {
             throw new InvalidMove("Moving Out of the board!!");
         }
         Piece destPiece = board[desRow][desColumn];
-        if(piece == null || destPiece == null){
+        if(piece == null){
             return false;
         }
-        if(piece.getColour() == destPiece.getColour()){
+        if(destPiece != null && piece.getColour() == destPiece.getColour()){
             return false;
         }
         return piece.canMove(this, desRow, desColumn);
